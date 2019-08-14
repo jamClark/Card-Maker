@@ -1,0 +1,47 @@
+﻿<Application x:Name="App" x:Class="CardMaker.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CardMaker"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <x:Array x:Key="CardTypeList" Type="local:CardTypeEntry">
+            <local:CardTypeEntry Value="Avatar" />
+            <local:CardTypeEntry Value="Ally" />
+            <local:CardTypeEntry Value="Enhancement" />
+            <local:CardTypeEntry Value="Location" />
+            <local:CardTypeEntry Value="Objective" />
+            <local:CardTypeEntry Value="Strategy" />
+            <local:CardTypeEntry Value="Trap" />
+            <local:CardTypeEntry Value="Other" />
+        </x:Array>
+        <x:Array x:Key="AffiliationList" Type="local:CardTypeEntry">
+            <local:CardTypeEntry Value="Neutral" />
+            <local:CardTypeEntry Value="Monk" />
+            <local:CardTypeEntry Value="Falcon Eyes" />
+            <local:CardTypeEntry Value="Katana" />
+            <local:CardTypeEntry Value="Serangels" />
+            <local:CardTypeEntry Value="Tormonrag" />
+            <local:CardTypeEntry Value="Unfaithful" />
+        </x:Array>
+        
+        <local:AddSetCommandWrapper x:Key="ContextMenu_AddSetCmd"/>
+        <local:RenameSetCommandWrapper x:Key="ContextMenu_RenameSetCmd"/>
+        <local:RemoveSetCommandWrapper x:Key="ContextMenu_RemoveSetCmd"/>
+
+        <local:ImportSetCommandWrapper x:Key="ContextMenu_ImportSetCmd"/>
+        <local:ExportSetCommandWrapper x:Key="ContextMenu_ExportSetCmd"/>
+        
+        <local:AddCardCommandWrapper x:Key="ContextMenu_AddCardCmd"/>
+        <local:RemoveCardCommandWrapper x:Key="ContextMenu_RemoveCardCmd"/>
+
+        <local:ImportCardCommandWrapper x:Key="ContextMenu_ImportCardCmd"/>
+        <local:ExportCardCommandWrapper x:Key="ContextMenu_ExportCardCmd"/>
+
+        <local:OpenCardGameCommandWrapper x:Key="ContextMenu_OpenCardGameCmd"/>
+        <local:AppendCardGameCommandWrapper x:Key="ContextMenu_AppendCardGameCmd"/>
+        <local:SaveCardGameCommandWrapper x:Key="ContextMenu_SaveCardGameCmd"/>
+
+        <local:PrintCommandWrapper x:Key="Menu_PrintCmd" />
+
+    </Application.Resources>
+</Application>

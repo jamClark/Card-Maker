@@ -1,0 +1,5 @@
+﻿
+-make combo boxes use window data that is loaded from external source
+-icons that match card type
+
+OLD BG #FFBEC3D4
